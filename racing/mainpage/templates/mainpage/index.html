@@ -1,3 +1,6 @@
+{% load static %}
+<link rel="stylesheet"
+    href="{% static 'd1.css' %}" >
 {% for p in participants %}
 <div id={{p.name}}>{{p.name}}</div>
 {% endfor %}

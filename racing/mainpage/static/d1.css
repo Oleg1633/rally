@@ -29,3 +29,15 @@
 #KickSauber{
     background-color: rgb(128 255 0);
 }
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+div {
+    width: 100px;
+    height:  66px;
+   border: 3px solid black;
+    border-radius: 6px;
+}
