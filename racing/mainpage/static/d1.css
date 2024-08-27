@@ -1,33 +1,44 @@
 #RedBull{
-    background-color:rgb(0 0 255) ;
+    background-image: url("/static/logo/RedBull.jfif");
+    background-size: 100% 100%;
+    
 }
 #Mclaren{
-    background-color: rgb(255 128 64)
+    background-image: url("/static/logo/Mclaren.jfif");
+    background-size: 100% 100%;
 
 }
 #Ferrari{
-    background-color: rgb(237 28 36)
+    background-image: url("/static/logo/Ferrari.jfif");
+    background-size: 100% 100%;
 }
 #Mercedes{
-    background-color: rgb(192 192 192);
+    background-image: url("/static/logo/Mercedes.jfif");
+    background-size: 100% 100%;
 }
 #AstonMartin{
-    background-color: rgb(0 128 0);
+    background-image: url("/static/logo/AstonMartin.jfif");
+    background-size: 100% 100%;
 }
 #RacingBulls{
-    background-color: rgb(0 255 255);
+    background-image: url("/static/logo/RB.jfif");
+    background-size: 100% 100%;
 }
 #Haas{
-    background-color: rgb(255 255 255);
+    background-image: url("/static/logo/Haas.jfif");
+    background-size: 100% 100%;
 }
 #Alpine{
-    background-color: rgb(0 128 128);
+    background-image: url("/static/logo/Alpine.jfif");
+    background-size: 100% 100%;
 }
 #Williams{
-    background-color: rgb(0 255 255);
+    background-image: url("/static/logo/Williams.jfif");
+    background-size: 100% 100%;
 }
 #KickSauber{
-    background-color: rgb(128 255 0);
+    background-image: url("/static/logo/Stake.jfif");
+    background-size: 100% 100%;
 }
 body{
     display: flex;
@@ -36,8 +47,8 @@ body{
     align-items: center;
 }
 div {
-    width: 100px;
-    height:  66px;
+    width: 300px;
+    height:  200px;
    border: 3px solid black;
     border-radius: 6px;
 }
