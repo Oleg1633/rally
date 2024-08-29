@@ -21,3 +21,12 @@ def index(request):
         'mainpage/index.html',
         context
     )
+def team_profile(request, username):
+    return render(
+        request,     #так будет всегда(первым параметром будет request)
+        'mainpage/news.html',
+        context={
+            "teamTitle": username, 
+            "myphoto": "/static/logo/" + username + ".jfif"
+        }
+    )

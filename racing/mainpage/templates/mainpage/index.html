@@ -1,6 +1,10 @@
 {% load static %}
 <link rel="stylesheet"
     href="{% static 'd1.css' %}" >
+    <div id="my2cols">
 {% for p in participants %}
-<div id={{p.name}}></div>
+<a href={% url 'team_profile' username=p.name %}>
+<div id={{p.name}} class="car" ></div>
+</a>
 {% endfor %}
+</div>
