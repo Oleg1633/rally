@@ -30,3 +30,15 @@ def team_profile(request, username):
             "myphoto": "/static/logo/" + username + ".jfif"
         }
     )
+
+
+ 
+from django.http import HttpResponse 
+def get_content(request, contenti): 
+    import os 
+    print(os.getcwd()) 
+    content = open( 
+        'mainpage/static/posts/p%i.html' % contenti, 
+        encoding='utf-8').read() 
+    print(content) 
+    return HttpResponse(content)
