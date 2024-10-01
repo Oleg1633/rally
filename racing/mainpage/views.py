@@ -42,3 +42,15 @@ def get_content(request, contenti):
         encoding='utf-8').read() 
     print(content) 
     return HttpResponse(content)
+
+from . import models
+
+def positions(request): #, username):
+    pilots = models.Pilot.objects.all()
+    return render(
+        request,     #так будет всегда(первым параметром будет request)
+        'mainpage/drivers.html',
+        context={
+            'pilots': pilots
+        }
+    )
