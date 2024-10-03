@@ -1,2 +1,7 @@
 
 <img src={{ myphoto }} alt="">
+<ul>
+    {% for ar in articles %}
+    <li><a href={% url 'article' team_name=tm artid=ar %}>ar</a></li>
+    {% endfor %}
+</ul>

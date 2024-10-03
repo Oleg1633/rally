@@ -1,4 +1,5 @@
 from django.shortcuts import render
+import os
 
 def index(request):
     context={
@@ -21,14 +22,23 @@ def index(request):
         'mainpage/index.html',
         context
     )
-def team_profile(request, username):
+def team_profile(request, team_name):
+    print(os.listdir('mainpage/templates/mainpage/%s' % team_name))
     return render(
         request,     #так будет всегда(первым параметром будет request)
         'mainpage/news.html',
         context={
-            "teamTitle": username, 
-            "myphoto": "/static/logo/" + username + ".jfif"
+            "teamTitle": team_name, 
+            "myphoto": "/static/logo/" + team_name + ".jfif",
+            'tm': team_name,
+            'articles': os.listdir('mainpage/templates/mainpage/%s' % team_name)
         }
+    )
+
+def article(request, team_name, artid):
+    return render(
+        request,     #так будет всегда(первым параметром будет request)
+        'mainpage/%s/%s' % (team_name, artid),
     )
 
 
