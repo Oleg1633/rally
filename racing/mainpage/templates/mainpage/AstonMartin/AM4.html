@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    {% load static %}
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Мир Формулы 1</title>
+
+	
+	<link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+	{% load static %}
+    <div class="box"></div>
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="navbar-brand">Мир Формулы 1</a>
+            
+            <div class="navbar-wrap">
+                <ul class="navbar-menu">
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="{% url 'positions' %}"  target="_blank">Список пилотов</a></li>
+                    <li><a href="#">Контакты</a></li>
+                
+                </ul>
+                    <a href="" class="callback">Обратный звонок</a>
+            </div>
+        </div>
+    </nav>
+    <h1>Aston Martin провёл шоу-заезды в Остине</h1>
+<style>
+    P{
+        text-indent: 1.5em;
+        text-align: justify;
+        font-size: 20px;
+    }
+</style>
+
+<img src="https://autosport.com.ru/files/styles/896x504/public/news/2024/10/16/136960-382b7341-2602-4a22-8724-5932b7a6298e.jpeg?itok=JY-3tl-M" 
+        alt="car">
+<p>Накануне Гран При США, который примет автодром в Остине, заводская команда 
+    Aston Martin провела показательные заезды на улицах Хьюстоне. Британский 
+    коллектив организовал выступления в честь своего титульного партнёра — 
+    арабской нефтегазовой компании Aramco, один из офисов которой находится 
+    в этом городе. Также фирма отмечает 50-летие своего присутствия в США.
+</p>
+<p>Американский гонщик молодёжной моносерии Формула 2 Джек Кроуфорд, выступающий 
+    в турнире в составе команды DAMS, сел за руль болида Aston Martin AMR22, 
+    который участвовал в чемпионате мира 2022 года. Молодой пилот провёл серию 
+    из пяти заездов в разных частях Хьюстона, чтобы охватить как можно большую 
+    аудиторию, а затем машина стала частью экспозиции прошедшей в городе конференции.
+</p>
+<p>Как отмечено, заезды стали частью проекта Generation 3, отмечающего очередную 
+    стадию сотрудничества Aston Martin и Aramco. Ожидается, что Generation 3
+    посвятят также и ливрею болидов, на которых испанец Фернандо Алонсо и канадец 
+    Лэнс Стролл проведут предстоящий Гран При США.
+</p>
+</body>
+</html>

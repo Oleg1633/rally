@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    {% load static %}
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Мир Формулы 1</title>
+
+	
+	<link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+	{% load static %}
+    <div class="box"></div>
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="navbar-brand">Мир Формулы 1</a>
+            
+            <div class="navbar-wrap">
+                <ul class="navbar-menu">
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="{% url 'positions' %}"  target="_blank">Список пилотов</a></li>
+                    <li><a href="#">Контакты</a></li>
+                
+                </ul>
+                    <a href="" class="callback">Обратный звонок</a>
+            </div>
+        </div>
+    </nav>
+    <h1>Марко назвал кандидата на замену Серхио Переса</h1>
+<style>
+    P{
+        text-indent: 1.5em;
+        text-align: justify;
+        font-size: 20px;
+    }
+</style>
+
+<img src="https://cdn.f1ne.ws/userfiles/lawson/177572.jpg" 
+        alt="car">
+<p>У Серхио Переса подписан контракт с Red Bull Racing на следующий сезон, но слухи о 
+    том, что он завершит карьеру в конце 2024 года, только усиливаются. И хотя мексиканский 
+    гонщик их отрицает, консультант Red Bull по автоспорту Хельмут Марко уже дал понять, что 
+    хочет в 2025-м видеть молодого гонщика напарником Макса Ферстаппена.
+</p>
+<p>В свежем интервью немецкому F1-Insider Марко назвал Юки Цуноду одним из кандидатов на 
+    замену Серхио Переса в следующем сезоне.
+</p>
+<p>Хельмут Марко: «Цунода – кандидат на выступления в одной команде с Максом в 2025 году. 
+    Оставшиеся гонки сезона определят, как будут выглядеть составы наших команд в следующем 
+    сезоне. Я вполне могу представить молодого гонщика рядом с Максом.
+</p>
+<p>
+    Мы решили сравнить Лиама Лоусона и Юки Цуноду. В их распоряжении одинаковые машины, 
+    одинаковые условия и шесть гонок, чтобы доказать, кто из них лучше».
+</p>
+</body>
+</html>

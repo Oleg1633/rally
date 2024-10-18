@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    {% load static %}
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Мир Формулы 1</title>
+
+	
+	<link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+	{% load static %}
+    <div class="box"></div>
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="navbar-brand">Мир Формулы 1</a>
+            
+            <div class="navbar-wrap">
+                <ul class="navbar-menu">
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="{% url 'positions' %}"  target="_blank">Список пилотов</a></li>
+                    <li><a href="#">Контакты</a></li>
+                
+                </ul>
+                    <a href="" class="callback">Обратный звонок</a>
+            </div>
+        </div>
+    </nav>
+    <h1>Хэмилтон не сядет за руль Ferrari на тестах в Абу-Даби</h1>
+<style>
+    P{
+        text-indent: 1.5em;
+        text-align: justify;
+        font-size: 20px;
+    }
+</style>
+
+<img src="https://cdn.f1ne.ws/userfiles/hamilton/177529.jpg" 
+        alt="car">
+<p>После финального этапа сезона в Абу-Даби пройдут тесты, на которых 
+    команды смогут поработать с шинами 2025 года. В некоторых случаях 
+    гонщики, менявшие команду, уже на этих тестах получали возможность 
+    сесть за руль новой для себя машины, но в случае с Льюисом Хэмилтоном 
+    этого не случится.
+</p>
+<p>По информации BBC Sport, у семикратного чемпиона мира нулевые шансы 
+    сесть за руль Ferrari на тестах в Абу-Даби.
+</p>
+<p>Контракт гонщика с Mercedes рассчитан до конца декабря, и после 
+    завершения сезона команда запланировала много рекламных мероприятий 
+    с участием Хэмилтона, часть из которых будет посвящена прощанию с 
+    командой и двигателями Mercedes, на которых Льюис выступал всю свою 
+    карьеру в Формуле 1.
+</p>
+<p>
+    Таким образом, за рулём Ferrari болельщики увидят Льюиса Хэмилтона 
+    только в 2025 году.
+</p>
+</body>
+</html>

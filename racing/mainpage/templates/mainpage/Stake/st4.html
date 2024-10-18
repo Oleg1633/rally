@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    {% load static %}
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Мир Формулы 1</title>
+
+	
+	<link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+	{% load static %}
+    <div class="box"></div>
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="navbar-brand">Мир Формулы 1</a>
+            
+            <div class="navbar-wrap">
+                <ul class="navbar-menu">
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="{% url 'positions' %}"  target="_blank">Список пилотов</a></li>
+                    <li><a href="#">Контакты</a></li>
+                
+                </ul>
+                    <a href="" class="callback">Обратный звонок</a>
+            </div>
+        </div>
+    </nav>
+    <h1>Валттери Боттас: Гонщики должны быть примером, но очень сложно не ругаться</h1>
+<style>
+    P{
+        text-indent: 1.5em;
+        text-align: justify;
+        font-size: 20px;
+    }
+</style>
+
+<img src="https://f1report.ru/img/newsf1/2023/11/618714155739.jpg" 
+        alt="car">
+<p>Пилот “Kick Sauber” Валттери Боттас считает, что гонщикам Формулы-1 сложно не использовать нецензурную брань, 
+    поскольку они выросли на гоночных трассах.
+</p>
+<p>“Гонщики должны быть для всех примером, но очень сложно не ругаться. В конце концов, мы тоже люди, и мы выросли 
+    на гоночных трассах. Мы часто используем общеупотребительные слова, которые уже привычны и не воспринимаются 
+    людьми, как оскорбительные. Сложно изменить свои привычки, но я думаю, что это еще и что-то довольно личное. 
+    К этому нужно привыкнуть. Мы, без сомнения, посмотрим, что из этого получится, и потом поговорим”.
+</p>
+</body>
+</html>

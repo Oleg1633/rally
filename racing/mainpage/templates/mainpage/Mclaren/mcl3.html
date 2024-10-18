@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    {% load static %}
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Мир Формулы 1</title>
+
+	
+	<link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+	{% load static %}
+    <div class="box"></div>
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="navbar-brand">Мир Формулы 1</a>
+            
+            <div class="navbar-wrap">
+                <ul class="navbar-menu">
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="{% url 'positions' %}"  target="_blank">Список пилотов</a></li>
+                    <li><a href="#">Контакты</a></li>
+                
+                </ul>
+                    <a href="" class="callback">Обратный звонок</a>
+            </div>
+        </div>
+    </nav>
+    <h1>Дэвид Култхард: Менталитет McLaren изменился</h1>
+<style>
+    P{
+        text-indent: 1.5em;
+        text-align: justify;
+        font-size: 20px;
+    }
+</style>
+
+<img src="https://f1report.ru/img/newsf1/2023/01/618717121548.jpg" 
+        alt="car">
+<p>Бывший гонщик Формулы-1 Дэвид Култхард считает, что к концу нынешнего сезона команда 
+    “McLaren” смогла изменить свой менталитет, чтобы добиться лучших результатов
+</p>
+<p>“Ранее мы говорили, что у “McLaren” мышление новичков, которые только пришли в гонки и 
+    добились первых конкурентоспособных результатов. Сейчас же я считаю, что их менталитет 
+    кардинально изменился: они верят в то, что борются за чемпионство, и что лидируют в Кубке 
+    конструкторов. Думаю, им потребуется немного времени, чтобы выиграть оба чемпионата в этом году”.
+</p>
+<p>После 18 этапов у команды “McLaren” первое место в Кубке конструкторов и 516 очков на счету. Команда 
+    “Red Bull” находится на втором месте с активом в 475 очков
+</p>
+
+</body>
+</html>

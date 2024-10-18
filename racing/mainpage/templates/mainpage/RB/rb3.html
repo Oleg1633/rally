@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    {% load static %}
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Мир Формулы 1</title>
+
+	
+	<link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+	{% load static %}
+    <div class="box"></div>
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="navbar-brand">Мир Формулы 1</a>
+            
+            <div class="navbar-wrap">
+                <ul class="navbar-menu">
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="{% url 'positions' %}"  target="_blank">Список пилотов</a></li>
+                    <li><a href="#">Контакты</a></li>
+                
+                </ul>
+                    <a href="" class="callback">Обратный звонок</a>
+            </div>
+        </div>
+    </nav>
+    <h1>Риккардо оставил послание в социальных сетях</h1>
+<style>
+    P{
+        text-indent: 1.5em;
+        text-align: justify;
+        font-size: 20px;
+    }
+</style>
+
+<img src="https://cdn.f1ne.ws/userfiles/ricciardo/177622.jpg" 
+        alt="car">
+<p>Покинув число основных пилотов Формулы 1 после Гран При Сингапура, Даниэль Риккардо 
+    долго хранил молчание, не комментируя сложившуюся ситуацию и своё отношение к ней.
+</p>
+<p>Ответ отыскался в социальных сетях его друга Адама Чианчаруло – американского мотогонщика, 
+    участника соревнований по мотокроссу, который поделился фотографией в социальных сетях, 
+    где Даниэль Риккардо носит кепку с надписью: «Я на пенсии, хорошо проводить время – моя работа».
+</p>
+<p>Видимо австралиец закрыл эту главу своей жизни, он не раз говорил, что в случае увольнения из 
+    RB не согласится вернуться к роли резервного или тест-пилота в Формуле 1. Впрочем, его всегда 
+    с удовольствием примут в австралийской серии V8 Supercars и других чемпионатах.
+</p>
+</body>
+</html>

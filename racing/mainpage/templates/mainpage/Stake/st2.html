@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    {% load static %}
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Мир Формулы 1</title>
+
+	
+	<link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+	{% load static %}
+    <div class="box"></div>
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="navbar-brand">Мир Формулы 1</a>
+            
+            <div class="navbar-wrap">
+                <ul class="navbar-menu">
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="{% url 'positions' %}"  target="_blank">Список пилотов</a></li>
+                    <li><a href="#">Контакты</a></li>
+                
+                </ul>
+                    <a href="" class="callback">Обратный звонок</a>
+            </div>
+        </div>
+    </nav>
+    <h1>Валттери Боттас: Только через пять лет я признал, что не смогу победить Хэмилтона</h1>
+<style>
+    P{
+        text-indent: 1.5em;
+        text-align: justify;
+        font-size: 20px;
+    }
+</style>
+
+<img src="https://autosport.com.ru/files/styles/896x504/public/news/2024/10/17/136977-fb95f0e4-4692-44ce-9a9a-be691d120d2c.jpeg?itok=_OUMBGH8" 
+        alt="car">
+<p>Пилот Sauber Валттери Боттас рассказал, что только к концу своего пребывания в Mercedes признал, 
+    что никогда не сможет победить Льюиса Хэмилтона в чемпионате.
+</p>
+<p>За пять лет в составе «Серебряных стрел» Боттас одержал десять побед, в то время как Хэмилтон в 
+    тот же период поднялся на высшую ступеньку подиума 50 раз.
+</p>
+<p>«Только к концу своего пребывания в Mercedes я понял и принял, что не смогу побеждать Льюиса в 
+    течение целого сезона. Мне понадобилось пять лет, – признался Боттас немецкому изданию Auto Motor und Sport. 
+    – Тогда он был действительно на пике своих возможностей. Но такова жизнь. Таковы гонки».
+</p>
+</body>
+</html>

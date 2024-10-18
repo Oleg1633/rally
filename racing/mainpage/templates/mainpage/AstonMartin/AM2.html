@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    {% load static %}
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Мир Формулы 1</title>
+
+	
+	<link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+	{% load static %}
+    <div class="box"></div>
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="navbar-brand">Мир Формулы 1</a>
+            
+            <div class="navbar-wrap">
+                <ul class="navbar-menu">
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="{% url 'positions' %}"  target="_blank">Список пилотов</a></li>
+                    <li><a href="#">Контакты</a></li>
+                
+                </ul>
+                    <a href="" class="callback">Обратный звонок</a>
+            </div>
+        </div>
+    </nav>
+    <h1>Алонсо: Главное сейчас – добиться хорошей корреляции</h1>
+<style>
+    P{
+        text-indent: 1.5em;
+        text-align: justify;
+        font-size: 20px;
+    }
+</style>
+
+<img src="https://cdn.f1ne.ws/userfiles/alonso/177664.jpg" 
+        alt="car">
+<p>Фернандо Алонсо не ждёт чудес от новинок, которые в Aston Martin 
+    подготовили для Остина и следующих этапов, да и задачи такой не было…
+</p>
+<p>Фернандо Алонсо: «Я не думаю, что нужно многого ждать от подготовленных 
+    командой новинок. Это обновление не приведет Aston Martin на вершину. 
+    На этом этапе сезона все обновления весьма незначительные. Скорее, 
+    это проверка решений на 2025 год, нам важно понять, как они ведут себя на реальной машине.
+</p>
+<p>Главная задача на этот уик-энд – добиться хорошей корреляции данных между измерениями в 
+    аэродинамической трубе и тестами на реальной трассе, сделать так, чтобы обновление 
+    работало так, как мы ждём. Но на результаты это никак не повлияет».
+</p>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    {% load static %}
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Мир Формулы 1</title>
+
+	
+	<link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+	{% load static %}
+    <div class="box"></div>
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="navbar-brand">Мир Формулы 1</a>
+            
+            <div class="navbar-wrap">
+                <ul class="navbar-menu">
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="{% url 'positions' %}"  target="_blank">Список пилотов</a></li>
+                    <li><a href="#">Контакты</a></li>
+                
+                </ul>
+                    <a href="" class="callback">Обратный звонок</a>
+            </div>
+        </div>
+    </nav>
+    <h1>Колапинто: Я хочу в будущем выступать за Williams</h1>
+<style>
+    P{
+        text-indent: 1.5em;
+        text-align: justify;
+        font-size: 20px;
+    }
+</style>
+
+<img src="https://cdn.f1ne.ws/userfiles/colapinto/177574.jpg" 
+        alt="car">
+<p>Состав Williams на следующий сезон уже сформирован – новым напарником Алекса Элбона 
+    станет Карлос Сайнс. Франко Колапинто, заменивший после этапа в Зандфорте Логана Сарджента, 
+    надеется, что в обозримом будущем у него ещё будет шанс сесть за руль Williams в гонках.
+</p>
+<p>«Мне бы хотелось, чтобы в будущем у меня появилась возможность выступать за Williams, – рассказал 
+    аргентинский гонщик. – Если этого не произойдёт, то я не знаю, какие у меня есть варианты. Мой «план 
+    А» – остаться в Williams. Они много инвестировали в меня с тех пор, как я выступал в молодёжных гоночных 
+    сериях, и я благодарен команде за это.
+</p>
+<p>Я делаю всё, что в моих силах, и сосредоточен на своей работе. Результаты уже приходят, что очень позитивно, 
+    но посмотрим, что мы сможем сделать в следующих гонках. Думаю, результаты будут хорошие».
+</p>
+
+</body>
+</html>

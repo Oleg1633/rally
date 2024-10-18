@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    {% load static %}
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Мир Формулы 1</title>
+
+	
+	<link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+	{% load static %}
+    <div class="box"></div>
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="navbar-brand">Мир Формулы 1</a>
+            
+            <div class="navbar-wrap">
+                <ul class="navbar-menu">
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="{% url 'positions' %}"  target="_blank">Список пилотов</a></li>
+                    <li><a href="#">Контакты</a></li>
+                
+                </ul>
+                    <a href="" class="callback">Обратный звонок</a>
+            </div>
+        </div>
+    </nav>
+    <h1>Ferrari, Red Bull и Audi нанимают мотористов Renault</h1>
+<style>
+    P{
+        text-indent: 1.5em;
+        text-align: justify;
+        font-size: 20px;
+    }
+</style>
+
+<img src="https://cdn.f1ne.ws/userfiles/alpinef1team/177570.jpg" 
+        alt="car">
+<p>Решение концерна Renault закрыть программу разработки и производства собственных 
+    силовых установок для сезона 2026 года стало большим разочарованием для сотрудников 
+    в Вири, но ситуацией активно пользуются соперники.
+</p>
+<p>Как удалось выяснить немецкому Auto Motor und Sport, в Red Bull, Ferrari и Audi нанимают 
+    на работу инженеров Renault, работавших над проектом силовой установки 2026 года. Особенно 
+    активно в этом направлении работает команда из Маранелло. По информации издания, уже десятки 
+    мотористов Renault прошли собеседование в Ferrari.
+</p>
+<p>Не меньший интерес к французским мотористам проявляют в Red Bull и Audi, которым в 2026 году 
+    предстоит выступать на силовых установках, собственной разработки. Для обеих команд это 
+    первый опыт создания двигателя, поэтому опыт и знания сотрудников из Вири лишними точно не будут.
+</p>
+
+</body>
+</html>

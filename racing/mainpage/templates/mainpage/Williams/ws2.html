@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    {% load static %}
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Мир Формулы 1</title>
+
+	
+	<link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+	{% load static %}
+    <div class="box"></div>
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="navbar-brand">Мир Формулы 1</a>
+            
+            <div class="navbar-wrap">
+                <ul class="navbar-menu">
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="{% url 'positions' %}"  target="_blank">Список пилотов</a></li>
+                    <li><a href="#">Контакты</a></li>
+                
+                </ul>
+                    <a href="" class="callback">Обратный звонок</a>
+            </div>
+        </div>
+    </nav>
+    <h1>На Williams FW46 в Остине будут необычные задние крылья</h1>
+<style>
+    P{
+        text-indent: 1.5em;
+        text-align: justify;
+        font-size: 20px;
+    }
+</style>
+
+<img src="https://cdn.f1ne.ws/userfiles/williams/177561.jpg" 
+        alt="car">
+<p>В Williams Racing подвели итоги конкурса, который проводили среди болельщиков вместе со своими 
+    спонсорами, американской компанией Kraken, и представили новое оформление заднего крыла своей машины, 
+    которое все воочию увидят в Остине.
+</p>
+<p>Эти элементы на FW46 Алекса Элбона и Франко Колапинто будут украшены картинками, присланными болельщиками – 
+    в конкурсе приняли участие десятки тысяч человек, но в итоге было отобрано шесть лучших эскизов. Отбор также 
+    осуществлялся с учётом мнений публики.
+</p>
+
+</body>
+</html>

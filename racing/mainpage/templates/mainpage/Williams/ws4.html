@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    {% load static %}
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Мир Формулы 1</title>
+
+	
+	<link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+	{% load static %}
+    <div class="box"></div>
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="navbar-brand">Мир Формулы 1</a>
+            
+            <div class="navbar-wrap">
+                <ul class="navbar-menu">
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="{% url 'positions' %}"  target="_blank">Список пилотов</a></li>
+                    <li><a href="#">Контакты</a></li>
+                
+                </ul>
+                    <a href="" class="callback">Обратный звонок</a>
+            </div>
+        </div>
+    </nav>
+    <h1>Джеймс Ваулз: В 2025-м у Williams будет лучший состав</h1>
+<style>
+    P{
+        text-indent: 1.5em;
+        text-align: justify;
+        font-size: 20px;
+    }
+</style>
+
+<img src="https://cdn.f1ne.ws/userfiles/vowles/177456.jpg" 
+        alt="car">
+<p>В 2025 году Карлос Сайнс присоединится к Williams, где станет напарником Алекса Элбона. 
+    Руководитель британской команды Джеймс Ваулз считает эту пару пилотов лучшей среди остальных в Формуле 1.
+</p>
+<p>Джеймс Ваулз: «Я думаю, что в 2025-м у нас будет лучший состав пилотов среди всех остальных. Конечно, Франко Колапинто 
+    сейчас блестяще справляется с работой, но у него нет того опыта, которым обладает Карлос.
+</p>
+<p>Я думаю, что не только с точки зрения умения пилотировать машину, но и с точки зрения умения вести команду вперёд, у нас будет 
+    лучший состав на стартовой решётке. Это поможет в мотивации команды и движении вперёд».
+</p>
+</body>
+</html>
