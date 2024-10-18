@@ -53,6 +53,7 @@ body{
     
     background-color: palegoldenrod;
 }
+
 div.car {
     width: 300px;
     height:  200px;
@@ -60,4 +61,14 @@ div.car {
     border-radius: 6px;
     background-size: 100% 100%;
     margin: 25px;
+}
+.teamlogo {
+    width: 260px;
+    height: 260px;
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }

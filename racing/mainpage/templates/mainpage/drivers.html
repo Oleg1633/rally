@@ -1,7 +1,43 @@
-<ol>
-    {% for p in pilots %}
-    <li>{{p.name}} - {{p.team}}</li>
-    {% endfor %}
-    
-    
-</ol>
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    {% load static %}
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Мир Формулы 1</title>
+
+	
+	<link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+	{% load static %}
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="navbar-brand">Мир Формулы 1</a>
+            
+            <div class="navbar-wrap">
+                <ul class="navbar-menu">
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="{% url 'positions' %}"  target="_blank">Список пилотов</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    
+                </ul>
+                    <a href="" class="callback">Обратный звонок</a>
+            </div>
+
+
+
+        </div>
+    </nav>
+
+    {% load static %} 
+    <script src={% static "mainpage/PilotsTV.js" %}> </script>
+    <ol id="pilotsList">
+        {% for p in pilots %}
+        <li>{{p.name}} - {{p.team}}</li>
+        {% endfor %}
+    </ol>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</body>
+</html>

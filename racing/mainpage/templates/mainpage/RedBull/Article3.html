@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    {% load static %}
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Мир Формулы 1</title>
+
+	
+	<link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+	{% load static %}
+    <div class="box"></div>
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="navbar-brand">Мир Формулы 1</a>
+            
+            <div class="navbar-wrap">
+                <ul class="navbar-menu">
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="{% url 'positions' %}"  target="_blank">Список пилотов</a></li>
+                    <li><a href="#">Контакты</a></li>
+                
+                </ul>
+                    <a href="" class="callback">Обратный звонок</a>
+            </div>
+        </div>
+    </nav>
+<h1>В «Ред Булл» объяснили наличие спорной системы, в которой их обвинили соперники</h1>
+<style>
+    P{
+        text-indent: 1.5em;
+        text-align: justify;
+        font-size: 20px;
+    }
+</style>
+
+    <img src="https://img.championat.com/s/732x488/news/big/p/z/v-red-bull-obyasnili-nalichie-spornoj-sistemy-v-kotoroj-ih-obvinili-soperniki_17291949412096241190.jpg" 
+        alt="car">
+    
+
+<p> Австрийская команда Формулы-1 «Ред Булл» подтвердила, что система для 
+    регулировки положения передней части днища (T-tray) действительно имеется на 
+    её болидах, однако не использовалась для внесения изменений в 
+    настройки в режиме закрытого парка. Об этом информирует BBC со ссылкой на 
+    представителя «Ред Булл».
+</p>
+<p>«Да, система существует, хотя она недоступна, когда автомобиль полностью 
+    собран и готов к выезду на трассу. В ходе нашей продолжительной переписки 
+    с Международной автомобильной федерацией этот момент обсуждался, и 
+    мы согласовали план на будущее», — сказал представитель австрийской команды.
+</p>
+<p>Ранее сообщалось, что в преддверии Гран-при США соперники заподозрили одну 
+    из команд в использовании уловки с дорожным просветом. Позже издание De 
+    Telegraaf сообщило, что речь идёт о «Ред Булл». Изменение настройки T-tray 
+    обеспечивает весомое преимущество в аэродинамике, влияя на дорожный просвет болида.
+</p>
+</body>
+</html>

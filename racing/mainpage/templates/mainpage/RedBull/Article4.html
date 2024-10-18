@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    {% load static %}
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Мир Формулы 1</title>
+
+	
+	<link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+	{% load static %}
+    <div class="box"></div>
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="navbar-brand">Мир Формулы 1</a>
+            
+            <div class="navbar-wrap">
+                <ul class="navbar-menu">
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="{% url 'positions' %}"  target="_blank">Список пилотов</a></li>
+                    <li><a href="#">Контакты</a></li>
+                
+                </ul>
+                    <a href="" class="callback">Обратный звонок</a>
+            </div>
+        </div>
+    </nav>
+    <h1>Макс Ферстаппен отреагировал на технический скандал вокруг Red Bull Racing</h1>
+    <style>
+        P{
+            text-indent: 1.5em;
+            text-align: justify;
+            font-size: 20px;
+        }
+    </style>
+    
+        <img src="https://autosport.com.ru/files/styles/896x504/public/news/2024/10/18/136992-33595d4a-6d4e-4f83-a476-c7bdd60fcadd.jpg?itok=p54Z1tUe" 
+            alt="car">
+    <p>Трёхкратный и действующий чемпион мира Формулы 1 Макс 
+        Ферстаппен признался, что удивлён шумихе вокруг запрета устройства 
+        Red Bull Racing. По словам нидерландца, система, меняющая дорожный 
+        просвет, была нужна только при работе механиков с разобранной 
+        машиной в боксах.
+    </p>
+    <p>
+        «Не вижу повода переживать. Это был обычный инструмент для 
+        упрощения настройки при снятых деталях. При собранной машине
+        мы не могли использовать это устройство. Так что решение FIA ничего не 
+        меняет для нас.
+    </p>
+    <p>
+        Когда я услышал эту новость, то даже не сразу понял, что речь идёт про 
+        Red Bull Racing. Мне казалось, другие команды используют такой же 
+        инструмент. На брифинге мы никогда даже не обсуждали эту вещь», – 
+        приводит слова Ферстаппена издание GPBlog.
+    </p>
+</body>
+</html>

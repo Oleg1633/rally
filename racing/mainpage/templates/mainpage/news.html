@@ -1,7 +1,79 @@
 
-<img src={{ myphoto }} alt="">
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    {% load static %}
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Мир Формулы 1</title>
+
+	
+	<link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+	{% load static %}
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="navbar-brand"></a>
+            
+            <div class="navbar-wrap">
+                <ul class="navbar-menu">
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="{% url 'positions' %}"  target="_blank">Список пилотов</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    
+                </ul>
+                    <a href="" class="callback">Обратный звонок</a>
+            </div>
+
+
+
+        </div>
+    </nav>
+
+
+    <style>
+        .sign {
+        float: left; /* Выравнивание по правому краю */
+        border: 1px solid #333; /* Параметры рамки */
+        padding: 7px; /* Поля внутри блока */
+        margin: 10px 0 5px 5px; /* Отступы вокруг */
+        background: #f0f0f0; /* Цвет фона */ 
+       }
+       .sign figcaption {
+        margin: 0 auto 5px; /* Отступы вокруг абзаца */
+       }
+    </style>
+{% load static %}
+<link rel="stylesheet"
+    href="{% static 'd1.css' %}" >
+    
 <ul>
-    {% for ar in articles %}
-    <li><a href={% url 'article' team_name=tm artid=ar %}>ar</a></li>
+{% for ar in articles %}
+    <figure class="sign">
+        <li><a href={% url 'article' team_name=tm artid=ar %}>
+            <img src="https://cdn.f1ne.ws/userfiles/fia/177656.jpg"
+            width=600px height=350px alt="Хельмут Марко: Доминирование Норриса чуждо даже для Red Bull">
+        </a>
+        <figcaption>В Red Bull изменят машину после консультаций с FIA </figcaption>
+        </li>
+        <li><a href={% url 'article' team_name=tm artid=ar %}>
+        <img src="https://autosport.com.ru/files/styles/896x504/public/news/2024/10/03/136746-beb38b5e-1212-4602-b8ac-e98dd9676eb1.jpg?itok=nXsqOilv"
+        width=600px height=350px alt="Хельмут Марко: Доминирование Норриса чуждо даже для Red Bull">
+        </a>
+        <figcaption>Хельмут Марко: Доминирование Норриса чуждо даже для Red Bull </figcaption>
+        </li>
+        <li><a href={% url 'article' team_name=tm artid=ar %}>
+            <img src=""
+            width=600px height=350px alt="В «Ред Булл» объяснили наличие спорной системы, в которой их обвинили соперники">
+            </a>
+            <figcaption>В «Ред Булл» объяснили наличие спорной системы, в которой их обвинили соперники </figcaption>
+        </li>
+    </figure>
     {% endfor %}
+    
+    
 </ul>
+	
+</body>
+</html>

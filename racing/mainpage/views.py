@@ -23,7 +23,19 @@ def index(request):
         context
     )
 def team_profile(request, team_name):
-    print(os.listdir('mainpage/templates/mainpage/%s' % team_name))
+    team_path = 'mainpage/templates/mainpage/%s' % team_name
+    if not os.path.exists(team_path):
+        return render(
+            request,     #так будет всегда(первым параметром будет request)
+            'mainpage/news.html',
+            context={
+                "teamTitle": team_name, 
+                "myphoto": "/static/logo/" + team_name + ".jfif",
+                'tm': team_name,
+                'articles': []
+            }
+        )
+    print(os.listdir())
     return render(
         request,     #так будет всегда(первым параметром будет request)
         'mainpage/news.html',
@@ -54,6 +66,17 @@ def get_content(request, contenti):
     return HttpResponse(content)
 
 from . import models
+
+def positions(request): #, username):
+    pilots = models.Pilot.objects.all()
+    return render(
+        request,     #так будет всегда(первым параметром будет request)
+        'mainpage/drivers.html',
+        context={
+            'pilots': pilots
+        }
+    )
+
 
 def positions(request): #, username):
     pilots = models.Pilot.objects.all()
