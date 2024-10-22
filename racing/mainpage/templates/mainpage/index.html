@@ -20,12 +20,12 @@
             
             <div class="navbar-wrap">
                 <ul class="navbar-menu">
-                    <li><a href="#">О нас</a></li>
+                    <li><a href={% url 'about' %}>О нас</a></li>
                     <li><a href="{% url 'positions' %}"  target="_blank">Список пилотов</a></li>
-                    <li><a href="#">Контакты</a></li>
+                    <li><a href={% url 'log' %}>Регистрация</a></li>
                     
                 </ul>
-                    <a href="" class="callback">Обратный звонок</a>
+                    <a href={% url 'call' %} class="callback">Обратный звонок</a>
             </div>
 
 
@@ -45,3 +45,4 @@
 </div>
 </body>
 </html>
+

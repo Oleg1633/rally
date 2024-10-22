@@ -78,12 +78,21 @@ def positions(request): #, username):
     )
 
 
-def positions(request): #, username):
-    pilots = models.Pilot.objects.all()
+def aboutUs(request): #, username):
     return render(
         request,     #так будет всегда(первым параметром будет request)
-        'mainpage/drivers.html',
-        context={
-            'pilots': pilots
-        }
+        'mainpage/aboutUs.html',
+        context={}
+    )
+def login(request): #, username):
+    return render(
+        request,     #так будет всегда(первым параметром будет request)
+        'mainpage/login.html',
+        context={}
+    )
+def callback(request): #, username):
+    return render(
+        request,     #так будет всегда(первым параметром будет request)
+        'mainpage/callback.html',
+        context={}
     )
